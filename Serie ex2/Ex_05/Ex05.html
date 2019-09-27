@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+
+<script>
+var b = 2 ;
+function calc1(){
+	var a = b ++ ; 
+	document.writeln("a = b++ valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc2(){
+	var a = ++b ; 
+	document.writeln("a = ++b valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc3(){
+	var a = b-- ; 
+	document.writeln("a = b-- valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc4(){
+	var a = --b ; 
+	document.writeln("a = --b valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc5(){
+	var a=+ b++ ; 
+	document.writeln("a =+ b++ valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc6(){
+	var a=1; a+=++b; 
+	document.writeln("a=1; a+=++b; valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc7(){
+	var a=1; a-=b++; 
+	document.writeln("a=1; a+=++b; valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc8(){
+	var a=1; a-=++b; 
+	document.writeln("a=1; a+=++b; valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc9(){
+	var a=1; a+=b--; 
+	document.writeln("a=1; a+=++b; valeur a = ", a ,"  valeur b = ", b);
+	}
+function calc10(){
+	var a=1; a+=--b;
+	document.writeln("a=1; a+=++b; valeur a = ", a ,"  valeur b = ", b);
+	}
+</script>
+
+<button id="button1" onClick="calc1()">Calcul 1</button>
+<button id="button2" onClick="calc2()">Calcul 2</button>
+<button id="button3" onClick="calc3()">Calcul 3</button>
+<button id="button4" onClick="calc4()">Calcul 4</button>
+<button id="button5" onClick="calc5()">Calcul 5</button>
+<button id="button6" onClick="calc6()">Calcul 6</button>
+<button id="button7" onClick="calc7()">Calcul 7</button>
+<button id="button8" onClick="calc8()">Calcul 8</button>
+<button id="button9" onClick="calc9()">Calcul 9</button>
+<button id="button10" onClick="calc10()">Calcul10 </button>
+</body>
+</html>

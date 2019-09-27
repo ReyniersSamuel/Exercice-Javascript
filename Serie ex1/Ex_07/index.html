@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex07</title>
+</head>
+
+<body>
+    <script>
+            function Pointure() {
+                var pointure, age, result;
+                pointure = prompt("Veuillez entrer votre pointure de chaussure");
+                pointure = pointure * 2;
+                pointure = pointure + 5;
+                alert(pointure);
+                pointure = pointure * 50;
+                alert(pointure);
+                age = prompt("Veuillez entrer votre année de naissance ");
+                result = pointure - age;
+                result = result + 1766;
+                alert(result);
+                document.write("<h1>" + result + "<h1>");
+            }
+        Pointure();
+    </script>
+</body>
+
+</html>

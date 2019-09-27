@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+<p>Exercice 4
+Dans le fichier HTML fourni, mettre les bordures des inputs en rouge si les mots de passe sont différents. Sinon les mettre en vert.</p><br>
+
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" onClick="verifie()" >Vérification</button>
+  </form>
+  
+  <script>
+  mdp = document.getElementById("motdepasse");
+  confirme = document.getElementById("confirmation");
+  function verifie(){
+	  
+	  if (mdp.value == confirme.value){
+		 mdp.style.border ="solid green 3px";
+		 confirme.style.border = "solid green 3px";
+		  }else {
+			  mdp.style.border ="solid red 3px";
+			  mdp.value = "";
+		      confirme.style.border = "solid red 3px";
+			  confirme.value = "";
+			  alert("Pas les mêmes");
+		 }	  
+	  }
+  
+  </script>
+  
+</body>
+</html>

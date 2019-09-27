@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<p>Exercice 12 - Conversion de température Celsius, Fahrenheit et Kelvin
+Créer un bouton. Au click de ce bouton, on lance la fonction conversionTemperature.
+
+L'utilisateur choisit d'abord dans le menu affiché quel type de conversion il souhaite, il indique son choix en indiquant le numéro correspondant dans le menu au moyen d'un prompt javascript
+
+Ensuite, un second prompt va lui demander la température à convertir et afficher le résultat dans une boîte d'alerte.
+
+Le menu :
+
+
+<br>De Celsius vers Fahrenheit
+<br>De Celsius vers Kelvin
+<br>De Fahrenheit vers Celsius
+<br>De Fahrenheit vers Kelvin
+<br>De Kelvin vers Celsius
+<br>De Kelvin vers Fahrenheit
+<br>Fin du programme
+</p>
+<button id="button" onClick="conversionTemperature()">Convertisseur de conversion convertissionnel</button>
+
+<script>
+console.log("conversionTemperature()");
+function conversionTemperature(){
+	var menu = prompt("1. De Celsius vers Fahrenheit \n2. De Celsius vers Kelvin \n3. De Fahrenheit vers Celsius \n4. De Fahrenheit vers Kelvin \n5. De Kelvin vers Celsius \n6. De Kelvin vers Fahrenheit \n7. Fin de programme");
+	var temp = 0;
+	
+	switch (menu){
+		case "1" :
+		temp = Number(prompt("Quelle temperature de celsius vers fahrenheit?"));
+		fahren = (temp * (9/5)) +32;
+		alert(fahren);
+		break;
+		
+		case "2" :
+		temp = Number(prompt("Quelle temperature de celsius vers kelvin?"));
+		kelvin = temp + 273.15;
+		alert(kelvin);
+		break; 
+		
+		case "3" :
+		temp = Number(prompt("Quelle temperature de fahrenheit vers celsius?"));
+		cels = (temp - 32)/ (9/5) ;
+		alert(cels);
+		break;
+		
+		case "4" :
+		temp = Number(prompt("Quelle temperature de fahrenheit vers kelvin?"));
+		kelvin = ((temp -32) * (5/9)) + 273.15 ;
+		alert(kelvin);
+		break;
+		
+		case "5" :
+		temp = Number(prompt("Quelle temperature de kelvin vers celsius?"));
+		cels = (temp) + 273.15 ;
+		alert(cels);
+		break;
+		
+		case "6" :
+		temp = Number(prompt("Quelle temperature de kelvin vers fahrenheit?"));
+		fahren = (temp * (9/5)) -459.67;
+		alert(fahren);
+		break;
+		
+		case "7" :
+		alert("Au revoir");
+		break;
+		
+		default :
+		alert("Qu'est-ce tu veux?");
+		}
+	
+	
+	}
+</script>
+</body>
+</html>

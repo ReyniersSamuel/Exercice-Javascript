@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+<p>Exercice 3
+Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.</p>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onKeyPress="keyAction()" />
+  </form>
+  
+  <script>
+  
+  function keyAction(){
+	  txt = document.getElementById("nom").value ;
+	  alert(txt);}
+  
+  </script>
+</body>
+</html>

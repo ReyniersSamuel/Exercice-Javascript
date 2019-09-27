@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+  <p>Exercice 6
+Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine dès que la souris ne survol plus l'image.
+Bonus Ne faire que deux fonctions JavaScript pour cet exercice.</p>
+
+      <img src="images/image1.jpg" id="image1" onMouseOver="changeImage()" onMouseOut="changeImage()"/>
+      <img src="images/image2.jpg" id="image2" onMouseOver="changeImage()" onMouseOut="changeImage()"/>
+      <img src="images/image3.jpg" id="image3" onMouseOver="changeImage()" onMouseOut="changeImage()"/>
+      <img src="images/image4.jpg" id="image4" onMouseOver="changeImage()" onMouseOut="changeImage()"/>
+      <img src="images/image5.jpg" id="image5" onMouseOver="changeImage()" onMouseOut="changeImage()"/>
+      
+      <script>
+	  
+	  un = document.getElementById("image1");
+	  un.onmouseover = function changeImage() {
+          un.src = 'images/image1_2.jpg';}
+	  un.onmouseout = function changeImage(){
+		  un.src = 'images/image1.jpg';}
+	  
+	  deux = document.getElementById("image2");
+	  deux.onmouseover = function changeImage() {
+          deux.src = 'images/image2_2.jpg';}
+	  deux.onmouseout = function changeImage(){
+		  deux.src = 'images/image2.jpg';}
+	  
+	  trois = document.getElementById("image3");
+	  trois.onmouseover = function changeImage() {
+          trois.src = 'images/image3_2.jpg';}
+	  trois.onmouseout = function changeImage(){
+		  trois.src = 'images/image3.jpg';}
+	  
+	  quatre = document.getElementById("image4");
+	  quatre.onmouseover = function changeImage() {
+          quatre.src = 'images/image4_2.jpg';}
+	  quatre.onmouseout = function changeImage(){
+		  quatre.src = 'images/image4.jpg';}
+	  
+	  cinq = document.getElementById("image5");
+	  cinq.onmouseover = function changeImage() {
+          cinq.src = 'images/image5_2.jpg';}
+	  cinq.onmouseout = function changeImage(){
+		  cinq.src = 'images/image5.jpg';}  
+	  
+	  </script>
+  </body>
+</html>

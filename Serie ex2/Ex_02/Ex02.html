@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex02</title>
+</head>
+
+<body>
+    <button id="button" onClick="surfaceCercle()"> Calcule le rayon d'un cercle</button>
+
+    <script>
+        console.log()
+        function surfaceCercle() {
+            var rayon = prompt("Entrer le rayon du cerle");
+            var surface = Math.pow(rayon, 2) * Math.PI;
+            alert("Le cercle fait " + surface + " cm carré ");
+        }
+    </script>
+
+</body>
+
+</html>

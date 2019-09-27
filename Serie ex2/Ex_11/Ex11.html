@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<p> Exercice 11 - utilisation des boucles et tests
+Créer un bouton. Au click de ce bouton, lancer la fonction calculMoyenne.
+
+<br>Cette fonction va calculer la moyenne des nombres entrés au clavier :
+
+<br>- demande à l'utilisateur d'entrer un nombre entier.
+<br>- si l'utilisateur entre autre chose qu'un nombre entier, un message d'alerte signale l'erreur et ensuite, la fonction redemande à l'utilisateur d'entrer un nombre entier.
+<br>- tant que le nombre entré est positif ou nul, la fonction mémorise ce nombre et l'additionne aux autres nombres précédemment entrés.
+<br>- si le nombre est négatif, alors la fonction calcule la moyenne de tous les nombres entrés en divisant la somme totale par le nombre de valeurs entrées.
+<br>-la fonction affiche le nombre de valeurs entrées
+<br>-la fonction affiche la moyenne</p>
+
+<button id="button" onClick="calculeMoyenne()">Calcule de moyenne </button>
+
+<script>
+console.log("calculeMoyenne()");
+function calculeMoyenne(){
+	var addition = 0;
+	var entier = 0;
+	var soustraire = 0;
+	var i = 0;
+	
+	while (!Number.isInteger(entier) || entier >=0){
+		entier = Number(prompt("un nombre"));
+		if(!Number.isInteger(entier)){
+			alert("error");
+		} else if(entier >=0){
+			addition += entier;
+			i++;
+			} else {
+				soustraire = addition / i;
+				alert(soustraire);
+			}
+	}
+		
+	
+	/*for(i=0; i<3;i++){
+		var triple = parseInt(prompt("entre un nbre"));
+		
+		if (triple = ""){
+		var triple = parseInt(prompt("Alerte ! Un nbre on a dit"));
+		} else if(!triple.isInteger()){
+			var triple = parseInt(prompt("Alerte ! Un nbre on a dit"));
+			} else if(triple >= 0){
+				posit += triple;
+				return(posit);
+				} else if(triple <= 0){
+					negat = (som+=triple)/3;
+					return(negat);
+					}else {
+						alert(error);
+						}
+			
+		alert(posit);
+	    alert(negat);
+		}*/
+		
+		
+	}
+</script>
+
+</body>
+</html>

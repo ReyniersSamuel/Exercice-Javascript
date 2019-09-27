@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX01</title>
+</head>
+
+<body>
+    <button id="bouttonsurface" onClick="surfacerectangle()">Calcule la surface d'un rectangle</button>
+
+    <button id="bouttonperimetre" onClick="perimetrerectangle()">Calcule le périmètre d'un restangle</button>
+
+    <script>
+        console.log()
+        function surfacerectangle() {
+            var longueur = prompt("Entrer la longueur du rectangle");
+            var largeur = prompt("Entrer la largeur du rectengle");
+            var surface = longueur * largeur;
+            alert("Le restangle fait " + surface + " cm carré ");
+        }
+        function perimetrerectangle() {
+            var longueur1 = prompt("Entrer la longueur du rectangle");
+            var largeur1 = prompt("Entrer la largeur du rectangle ");
+            var perimetre = (longueur1 * 2) + (largeur1 * 2);
+            alert(" Le perimètre du rectangle fait " + perimetre + " cm ");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
